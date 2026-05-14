@@ -224,7 +224,7 @@ function startCountdown() {
 startCountdown();
 
 // ==================== WHATSAPP BUY FUNCTION WITH IMAGE (CARA 1) ====================
-const phoneNumber = "681233893993"; // Ganti dengan nomor WhatsApp admin
+const phoneNumber = "6281917737513"; // Ganti dengan nomor WhatsApp admin
 
 function sendWhatsAppMessage(productName, productPrice, productImageUrl) {
     // Encode image URL agar aman untuk URL
