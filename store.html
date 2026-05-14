@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="description" content="Official Merchandise Store Tribun Kidul Suroboyo - Premium supporter gear for Persebaya Surabaya">
+        <meta name="theme-color" content="#0a5c3e">
+        <title>Tribun Kidul | Official Store</title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- Swiper JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- AOS Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="store.css">
+    </head>
+    <body>
+        <!-- Premium Preloader -->
+        <div class="preloader">
+            <div class="preloader-container">
+                <div class="preloader-ring"></div>
+                <div class="preloader-ring-middle"></div>
+                <div class="preloader-logo">
+                    <img src="assets/logo.png" alt="Logo">
+                </div>
+                <div class="preloader-text">TRIBUN KIDUL STORE</div>
+                <div class="preloader-progress-bar">
+                    <div class="preloader-progress"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Custom Cursor -->
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+        <div class="cursor-trail"></div>
+        <!-- Floating Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="logo-wrapper">
+                        <img src="assets/logo.png" alt="Logo" class="nav-logo">
+                        <div class="logo-glow"></div>
+                    </div>
+                    <div class="nav-brand-text">
+                        <span class="brand-tribun">KIDUL</span>
+                        <span class="brand-store">STORE</span>
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home" class="nav-link active">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#products" class="nav-link">Koleksi</a>
+                        </li>
+                        <li>
+                            <a href="#featured" class="nav-link">Exclusive</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="nav-link">Testimoni</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-actions">
+                    <button class="nav-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="logout-btn" onclick="handleLogout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Keluar</span>
+                    </button>
+                    <button class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section Premium -->
+        <section id="home" class="hero premium-hero">
+            <div class="hero-background">
+                <div class="hero-pattern"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-crown"></i>
+                    Premium Collection 2026
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Official</span>
+                    <span class="title-main">TRIBUN KIDUL</span>
+                    <span class="title-store">STORE</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the finest quality merchandise.
+                    <br>
+                    Authentic supporter gear for true Green Force fans.
+                </p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary btn-premium">
+                        <span>Shop Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#featured" class="btn btn-outline btn-premium">
+                        <i class="fas fa-gem"></i>
+                        <span>Exclusive Collection</span>
+                    </a>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Category Slider -->
+            <section class="category-slider">
+                <div class="container">
+                    <div class="swiper category-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-icon">
+                                        <i class="fas fa-tshirt"></i>
+                                    </div>
+                                    <h4>Apparel</h4>
+                                    <p>Jersey, Jaket, Kaus</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-icon">
+                                        <i class="fas fa-hat-cowboy"></i>
+                                    </div>
+                                    <h4>Accessories</h4>
+                                    <p>Topi, Syal, Pin</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-icon">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <h4>Collectibles</h4>
+                                    <p>Limited Edition</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-icon">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <h4>Premium</h4>
+                                    <p>Exclusive Items</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="category-card">
+                                    <div class="category-icon">
+                                        <i class="fas fa-futbol"></i>
+                                    </div>
+                                    <h4>Match Day</h4>
+                                    <p>Game Essentials</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Products Section Premium -->
+            <section id="products" class="products premium-products">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-tag">
+                            <i class="fas fa-fire"></i>
+                            Best Sellers
+                        </span>
+                        <h2 class="section-title">
+                            Featured
+                            <span class="highlight">Collections</span>
+                        </h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Discover our most popular premium merchandise</p>
+                    </div>
+                    <div class="products-filter" data-aos="fade-up">
+                        <button class="filter-btn active" data-filter="all">All Products</button>
+                        <button class="filter-btn" data-filter="apparel">Apparel</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                        <button class="filter-btn" data-filter="collectibles">Collectibles</button>
+                    </div>
+                    <div class="products-grid premium-grid" id="productsGrid">
+                        <!-- Product 1 -->
+                        <div
+                            class="product-card premium-card"
+                            data-category="apparel"
+                            data-aos="fade-up"
+                            data-aos-delay="0"
+                        >
+                            <div class="product-badge premium-badge">Best Seller</div>
+                            <div class="product-image premium-image">
+                                <img src="https://placehold.co/600x700/0a5c3e/white?text=Elite+Jersey" alt="Elite Jersey">
+                                <div class="product-actions-premium">
+                                    <button class="quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="whatsapp-buy">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info premium-info">
+                                <div class="product-category">Elite Apparel</div>
+                                <h3 class="product-title">Home Jersey Elite Edition 2026</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(4.9 • 245 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 499.000</span>
+                                    <span class="old-price">Rp 699.000</span>
+                                    <span class="discount">-29%</span>
+                                </div>
+                                <div class="product-sizes">
+                                    <span>S</span>
+                                    <span>M</span>
+                                    <span>L</span>
+                                    <span>XL</span>
+                                    <span>XXL</span>
+                                </div>
+                                <button class="btn-buy-wa" data-product="Home Jersey Elite Edition 2026" data-price="499000">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Beli via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div
+                            class="product-card premium-card"
+                            data-category="accessories"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                        >
+                            <div class="product-badge premium-badge hot">Hot Item</div>
+                            <div class="product-image premium-image">
+                                <img src="https://placehold.co/600x700/0a5c3e/white?text=Premium+Scarf" alt="Premium Scarf">
+                                <div class="product-actions-premium">
+                                    <button class="quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="whatsapp-buy">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info premium-info">
+                                <div class="product-category">Accessories</div>
+                                <h3 class="product-title">Silk Touch Scarf Signature</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0 • 532 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 149.000</span>
+                                </div>
+                                <div class="product-colors">
+                                    <span style="background: #0a5c3e;"></span>
+                                    <span style="background: #c9a03d;"></span>
+                                    <span style="background: #1a1a2e;"></span>
+                                </div>
+                                <button class="btn-buy-wa" data-product="Silk Touch Scarf Signature" data-price="149000">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Beli via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div
+                            class="product-card premium-card"
+                            data-category="apparel"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                        >
+                            <div class="product-image premium-image">
+                                <img src="https://placehold.co/600x700/0a5c3e/white?text=Bomber+Jacket" alt="Bomber Jacket">
+                                <div class="product-actions-premium">
+                                    <button class="quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="whatsapp-buy">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info premium-info">
+                                <div class="product-category">Premium Apparel</div>
+                                <h3 class="product-title">Varsity Bomber Jacket</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.8 • 189 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 899.000</span>
+                                    <span class="old-price">Rp 1.199.000</span>
+                                    <span class="discount">-25%</span>
+                                </div>
+                                <div class="product-sizes">
+                                    <span>M</span>
+                                    <span>L</span>
+                                    <span>XL</span>
+                                </div>
+                                <button class="btn-buy-wa" data-product="Varsity Bomber Jacket" data-price="899000">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Beli via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div
+                            class="product-card premium-card"
+                            data-category="accessories"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                        >
+                            <div class="product-badge premium-badge limited">Limited</div>
+                            <div class="product-image premium-image">
+                                <img src="https://placehold.co/600x700/0a5c3e/white?text=Snapback" alt="Snapback">
+                                <div class="product-actions-premium">
+                                    <button class="quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="whatsapp-buy">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info premium-info">
+                                <div class="product-category">Headwear</div>
+                                <h3 class="product-title">Limited Edition Snapback</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.7 • 167 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 189.000</span>
+                                </div>
+                                <button class="btn-buy-wa" data-product="Limited Edition Snapback" data-price="189000">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Beli via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Product 5 -->
+                        <div
+                            class="product-card premium-card"
+                            data-category="apparel"
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                        >
+                            <div class="product-badge premium-badge new">New Arrival</div>
+                            <div class="product-image premium-image">
+                                <img src="https://placehold.co/600x700/0a5c3e/white?text=Away+Jersey" alt="Away Jersey">
+                                <div class="product-actions-premium">
+                                    <button class="quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="whatsapp-buy">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info premium-info">
+                                <div class="product-category">Elite Apparel</div>
+                                <h3 class="product-title">Away Jersey Elite 2026</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0 • 98 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 499.000</span>
+                                </div>
+                                <button class="btn-buy-wa" data-product="Away Jersey Elite 2026" data-price="499000">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Beli via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Product 6 -->
+                        <div
+                            class="product-card premium-card"
+                            data-category="collectibles"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                        >
+                            <div class="product-image premium-image">
+                                <img src="https://placehold.co/600x700/0a5c3e/white?text=Pin+Collection" alt="Pin Collection">
+                                <div class="product-actions-premium">
+                                    <button class="quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="whatsapp-buy">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info premium-info">
+                                <div class="product-category">Collectibles</div>
+                                <h3 class="product-title">Premium Pin Set (10 pcs)</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(4.9 • 312 reviews)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">Rp 125.000</span>
+                                </div>
+                                <button class="btn-buy-wa" data-product="Premium Pin Set (10 pcs)" data-price="125000">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Beli via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-more" data-aos="fade-up">
+                        <button class="btn-load-more">
+                            <span>Load More Collection</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Exclusive Banner -->
+            <section class="exclusive-banner">
+                <div class="exclusive-content" data-aos="zoom-in">
+                    <div class="exclusive-badge">Limited Time Offer</div>
+                    <h2>Member Exclusive</h2>
+                    <div class="exclusive-discount">
+                        <span class="discount-number">20%</span>
+                        <span class="discount-text">OFF</span>
+                    </div>
+                    <p>Untuk member setia Tribun Kidul. Dapatkan diskon khusus dan akses pre-order produk eksklusif.</p>
+                    <div class="exclusive-timer" id="countdown">
+                        <div class="timer-block">
+                            <span class="days">00</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="timer-block">
+                            <span class="hours">00</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="timer-block">
+                            <span class="minutes">00</span>
+                            <label>Mins</label>
+                        </div>
+                        <div class="timer-block">
+                            <span class="seconds">00</span>
+                            <label>Secs</label>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-exclusive">
+                        Join Member Now
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+            <!-- Featured Section Premium -->
+            <section id="featured" class="featured premium-featured">
+                <div class="container">
+                    <div class="featured-grid">
+                        <div class="featured-content" data-aos="fade-right">
+                            <div class="featured-badge-premium">
+                                <i class="fas fa-diamond"></i>
+                                Ultra Premium
+                            </div>
+                            <h2>
+                                The Signature
+                                <span class="highlight">Collection</span>
+                            </h2>
+                            <p>Experience unparalleled quality with our signature collection. Crafted with premium materials and exclusive designs that represent the true spirit of Tribun Kidul.</p>
+                            <div class="featured-features">
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <div>
+                                        <h4>100% Authentic</h4>
+                                        <p>Official merchandise with certificate</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-truck"></i>
+                                    <div>
+                                        <h4>Express Shipping</h4>
+                                        <p>Free shipping for members</p>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-gem"></i>
+                                    <div>
+                                        <h4>Premium Quality</h4>
+                                        <p>High-grade materials</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-cta">
+                                <a href="#" class="btn-featured">
+                                    Explore Collection
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <div class="featured-guarantee">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Satisfaction Guaranteed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-visual" data-aos="fade-left">
+                            <div class="visual-wrapper">
+                                <img src="https://placehold.co/600x600/0a5c3e/white?text=Signature+Collection" alt="Signature Collection">
+                                <div class="visual-glow"></div>
+                                <div class="visual-badge">Exclusive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonials Premium -->
+            <section id="testimonials" class="testimonials premium-testimonials">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-tag">
+                            <i class="fas fa-comments"></i>
+                            Testimonials
+                        </span>
+                        <h2 class="section-title">
+                            What Our
+                            <span class="highlight">Customers Say</span>
+                        </h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="testimonials-slider-premium">
+                        <div class="swiper testimonials-swiper-premium">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-premium-card">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>"The quality is absolutely amazing! The jersey feels premium and the design is stunning. Best purchase ever!"</p>
+                                        <div class="testimonial-footer">
+                                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Customer">
+                                            <div>
+                                                <h4>Michael Wijaya</h4>
+                                                <span>Verified Buyer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-premium-card">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>"Fast shipping, excellent customer service, and the products are top-notch. Highly recommended for true fans!"</p>
+                                        <div class="testimonial-footer">
+                                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Customer">
+                                            <div>
+                                                <h4>Sarah Putri</h4>
+                                                <span>Gold Member</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-premium-card">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>"The bomber jacket is fire! Material quality is superb and the fit is perfect. Will definitely order again!"</p>
+                                        <div class="testimonial-footer">
+                                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Customer">
+                                            <div>
+                                                <h4>Rizky Pratama</h4>
+                                                <span>Platinum Member</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Brand Showcase -->
+            <section class="brand-showcase">
+                <div class="container">
+                    <div class="brand-grid" data-aos="fade-up">
+                        <div class="brand-item">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Premium Materials</span>
+                        </div>
+                        <div class="brand-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Exclusive Designs</span>
+                        </div>
+                        <div class="brand-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Authentic Product</span>
+                        </div>
+                        <div class="brand-item">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter Premium -->
+            <section class="newsletter premium-newsletter">
+                <div class="container">
+                    <div class="newsletter-wrapper-premium" data-aos="fade-up">
+                        <div class="newsletter-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Join Our Newsletter</h3>
+                        <p>Get exclusive offers, early access to new collections, and member-only discounts</p>
+                        <form class="newsletter-form-premium">
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Your email address" required>
+                                <button type="submit">
+                                    Subscribe
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="newsletter-benefits">
+                            <span>
+                                <i class="fas fa-check"></i>
+                                10% off first order
+                            </span>
+                            <span>
+                                <i class="fas fa-check"></i>
+                                Exclusive updates
+                            </span>
+                            <span>
+                                <i class="fas fa-check"></i>
+                                No spam, unsubscribe anytime
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer Premium -->
+            <footer id="contact">
+                <div class="footer-wave-top">
+                    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
+                    </svg>
+                </div>
+                <div class="footer-content-premium">
+                    <div class="container">
+                        <div class="footer-grid-premium">
+                            <div class="footer-col">
+                                <div class="footer-logo">
+                                    <img src="assets/logo.png" alt="Logo">
+                                    <h3>
+                                        KIDUL
+                                        <span>PREMIUM</span>
+                                    </h3>
+                                </div>
+                                <p>Official premium merchandise store for true Persebaya Surabaya supporters. Experience the finest quality supporter gear.</p>
+                                <div class="footer-social-premium">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#products">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="#featured">Exclusive</a>
+                                    </li>
+                                    <li>
+                                        <a href="#testimonials">Reviews</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shipping Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Returns Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Size Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Contact Info</h4>
+                                <ul class="contact-info">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Surabaya, Indonesia
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        premium@kidulstore.com
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone"></i>
+                                        +62 812 3456 7890
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        24/7 Customer Support
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-premium">
+                            <div class="copyright">
+                                <p>&copy; 2026 Tribun Kidul Store by Vitto Martha. All rights reserved.</p>
+                            </div>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fas fa-university"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Back to Top -->
+            <button class="back-to-top-premium">
+                <i class="fas fa-arrow-up"></i>
+                <span>Top</span>
+            </button>
+            <!-- Scripts -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="store.js"></script>
+        </body>
+    </html>
