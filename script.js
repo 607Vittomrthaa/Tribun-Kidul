@@ -348,6 +348,177 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// ==================== DATA BERITA (dengan konten lengkap) ====================
+const newsData = [
+    {
+        id: 1,
+        title: "Persebaya Raih Kemenangan Dramatis 3-2 atas Arema FC",
+        excerpt: "Gol kemenangan di menit ke-90+4 memastikan Green Force membawa pulang 3 poin dari Derby Jawa Timur yang berlangsung sengit.",
+        category: "match",
+        date: "12 Mei 2026",
+        author: "Tim Redaksi",
+        image: "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=600&h=400&fit=crop",
+        fullContent: "Pertandingan super klasik antara Persebaya dan Arema FC berlangsung di Stadion Gelora Bung Tomo dengan disaksikan lebih dari 50 ribu pasangan mata. Laga berjalan sengit sejak awal babak pertama. Arema FC sempat unggul lebih dulu melalui gol cepat di menit ke-12. Namun Persebaya tidak patah semangat. Francisco Rivera berhasil menyamakan kedudukan di menit ke-35 melalui tendangan bebas yang indah. Memasuki babak kedua, Persebaya tampil lebih dominan. Namun Arema kembali mencetak gol di menit ke-70 melalui serangan balik. Skor 1-2 membuat tensi semakin panas. Di masa injury time, keajaiban terjadi. Rivera mencetak gol keduanya di menit ke-90+2, kemudian di menit ke-90+4, pemain muda Muhammad Iqbal mencetak gol kemenangan. Stadion bergemuruh, kemenangan dramatis untuk Green Force! Hasil ini membawa Persebaya naik ke peringkat 5 klasemen sementara."
+    },
+    {
+        id: 2,
+        title: "Resmi: Striker Asing Baru Bergabung dengan Persebaya",
+        excerpt: "Pemain asal Brasil menandatangani kontrak 2 tahun + opsi perpanjangan untuk memperkuat lini serang musim depan.",
+        category: "transfer",
+        date: "10 Mei 2026",
+        author: "Transfer News",
+        image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&h=400&fit=crop",
+        fullContent: "Manajemen Persebaya secara resmi mengumumkan perekrutan striker asal Brasil, Carlos Alberto da Silva. Pemain berusia 26 tahun ini sebelumnya bermain untuk klub Serie B Brasil, Cruzeiro. Kontrak ditandatangani untuk durasi 2 tahun dengan opsi perpanjangan satu musim. Dalam konferensi pers, Carlos mengatakan sangat antusias bisa bermain di Indonesia dan bergabung dengan salah satu klub terbesar. 'Saya tahu Persebaya punya suporter luar biasa. Saya siap memberikan yang terbaik dan mencetak banyak gol,' ujarnya. Pelatih kepala juga optimis dengan kedatangan Carlos karena postur dan naluri golnya dianggap cocok dengan skema tim."
+    },
+    {
+        id: 3,
+        title: "Latihan Perdana di Stadion GBT: Persebaya Optimis Sambut Liga",
+        excerpt: "Skuad Green Force menggelar latihan terbuka yang dihadiri ribuan supporter, suasana penuh semangat.",
+        category: "training",
+        date: "8 Mei 2026",
+        author: "Media Officer",
+        image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop",
+        fullContent: "Sekitar 2000 supporter memadati Stadion Gelora Bung Tomo untuk menyaksikan latihan terbuka Persebaya. Para pemain menjalani sesi taktik dan small-sided games dengan antusiasme tinggi. Pelatih kepala mengatakan persiapan tim sudah mencapai 85% dan siap untuk laga pembuka liga pekan depan. 'Dukungan suporter seperti ini yang membuat kami makin termotivasi. Kami janji akan berjuang habis-habisan,' ujar kapten tim. Latihan ditutup dengan sesi foto bersama dan tanda tangan untuk para supporter."
+    },
+    {
+        id: 4,
+        title: "Wawancara Eksklusif: Kapten Tim Bicara Target Musim Ini",
+        excerpt: "Kapten tim mengungkapkan tekad membawa Persebaya juara Liga 1 dan fokus pada konsistensi.",
+        category: "interview",
+        date: "5 Mei 2026",
+        author: "Wawancara",
+        image: "https://images.unsplash.com/photo-1568992687947-868a62a9f1a4?w=600&h=400&fit=crop",
+        fullContent: "Dalam wawancara eksklusif di sela-sela latihan, kapten tim Ahmad Faiz mengungkapkan target utama Persebaya musim ini adalah merebut gelar juara Liga 1. 'Kami punya skuat yang lebih kuat dari tahun lalu. Pengalaman final tahun lalu menjadi pelajaran berharga. Fokus kami adalah konsistensi sepanjang musim,' ujar Faiz. Ia juga berharap seluruh elemen bisa bekerja sama. 'Supporter adalah kekuatan ke-12 kami. Tanpa mereka, kami bukan apa-apa. Mohon dukungannya dari menit pertama hingga akhir.'"
+    },
+    {
+        id: 5,
+        title: "Supporter Tribun Kidul Mewarnai Stadion GBT dengan Chant Luar Biasa",
+        excerpt: "Koreografi megah dan chant non-stop sepanjang pertandingan membuat atmosfer stadion luar biasa.",
+        category: "match",
+        date: "1 Mei 2026",
+        author: "Lapangan",
+        image: "https://images.unsplash.com/photo-1459865264687-1a3b8e6e5afb?w=600&h=400&fit=crop",
+        fullContent: "Pertandingan melawan Persib Bandung menjadi saksi penampilan spektakuler dari Tribun Kidul. Ribuan supporter menampilkan koreografi raksasa bertuliskan 'Satu Nyali Wani' yang membentang di tribun kidul. Chant 'Persebaya... ooo...' bergema non-stop selama 90 menit. Tak hanya itu, mereka juga membawa 2000 bendera kecil yang dikibarkan serempak. Keindahan visual dan audio ini membuat stadion terasa seperti kawah panas. Beberapa pemain Persebaya mengaku merinding mendapat dukungan seperti itu. Suporter Persib pun mengakui Tribun Kidul adalah salah satu yang terbaik di Indonesia."
+    },
+    {
+        id: 6,
+        title: "Dua Pemain Muda Dipromosikan ke Tim Utama",
+        excerpt: "Hasil seleksi akademi, dua pemain berbakat resmi dikontrak untuk mengisi skuad musim depan.",
+        category: "transfer",
+        date: "28 April 2026",
+        author: "Akademi",
+        image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&h=400&fit=crop",
+        fullContent: "Akademi Persebaya kembali melahirkan talenta muda potensial. Dua pemain, Rizky Fadillah (18 tahun, gelandang) dan Wawan Setiawan (19 tahun, bek tengah) resmi dipromosikan ke tim utama. Keduanya menandatangani kontrak tiga tahun. Manajer tim mengatakan ini adalah bukti komitmen klub dalam pembinaan pemuda. 'Mereka sudah menunjukkan performa impresif di tim U-20 dan pramusim. Kami yakin mereka bisa berkontribusi,' ujarnya. Rizky dan Wawan akan mengenakan nomor punggung 27 dan 33 untuk musim depan."
+    }
+];
+
+let visibleCount = 3;
+
+function renderNews() {
+    const visibleNews = newsData.slice(0, visibleCount);
+    const grid = document.getElementById("newsGrid");
+    if (!grid) return;
+
+    grid.innerHTML = visibleNews.map(news => `
+        <div class="news-card" data-id="${news.id}">
+            <div class="news-image">
+                <img src="${news.image}" alt="${news.title}" loading="lazy">
+                <span class="news-category">${news.category.toUpperCase()}</span>
+                <div class="news-date">
+                    <i class="far fa-calendar-alt"></i> ${news.date}
+                </div>
+            </div>
+            <div class="news-content">
+                <h3>${news.title}</h3>
+                <p class="news-excerpt">${news.excerpt}</p>
+                <div class="news-meta">
+                    <div class="news-author">
+                        <i class="fas fa-user"></i> ${news.author}
+                    </div>
+                    <a href="#" class="read-more" data-id="${news.id}">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    const loadBtn = document.getElementById("loadMoreBtn");
+    if (loadBtn) {
+        if (visibleCount >= newsData.length) {
+            loadBtn.style.display = "none";
+        } else {
+            loadBtn.style.display = "inline-flex";
+        }
+    }
+}
+
+// Fungsi menampilkan modal
+function showModal(news) {
+    const modal = document.getElementById("newsModal");
+    if (!modal) {
+        console.error("Modal element not found! Pastikan HTML modal sudah ditambahkan.");
+        return;
+    }
+    document.getElementById("modalCategory").innerText = news.category.toUpperCase();
+    document.getElementById("modalImage").src = news.image;
+    document.getElementById("modalTitle").innerText = news.title;
+    document.getElementById("modalDate").innerText = news.date;
+    document.getElementById("modalAuthor").innerText = news.author;
+    document.getElementById("modalContent").innerHTML = news.fullContent;
+
+    modal.classList.add("show");
+    document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+    const modal = document.getElementById("newsModal");
+    if (modal) {
+        modal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+}
+
+// Event delegation untuk tombol "Baca Selengkapnya" (aman meski konten dinamis)
+document.addEventListener('click', function (e) {
+    // Cari elemen .read-more yang diklik atau di dalamnya
+    const target = e.target.closest('.read-more');
+    if (target && target.classList.contains('read-more')) {
+        e.preventDefault();
+        const newsId = parseInt(target.getAttribute('data-id'));
+        const news = newsData.find(n => n.id === newsId);
+        if (news) {
+            showModal(news);
+        }
+    }
+});
+
+// Event listener untuk menutup modal
+document.addEventListener('click', function (e) {
+    const modal = document.getElementById("newsModal");
+    if (!modal) return;
+    // Tutup jika klik pada tombol close, tombol tutup, atau area luar modal
+    if (e.target.classList.contains('modal-close') ||
+        e.target.classList.contains('modal-close-btn') ||
+        e.target === modal) {
+        closeModal();
+    }
+});
+
+// Load More
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+        if (visibleCount < newsData.length) {
+            visibleCount += 3;
+            renderNews();
+        }
+    });
+}
+
+// Initial render
+document.addEventListener('DOMContentLoaded', function () {
+    renderNews();
+});
+
 document.querySelectorAll('.stat-panel, .feature-premium, .value-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
