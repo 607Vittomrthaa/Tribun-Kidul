@@ -261,6 +261,73 @@
                 </div>
             </div>
         </section>
+        <!-- ==================== NEWS SECTION ==================== -->
+        <section id="news" class="news premium-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">
+                        <i class="fas fa-newspaper"></i>
+                        Berita Terkini
+                    </span>
+                    <h2 class="section-title">
+                        Latest
+                        <span class="highlight">News</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                <!-- Grid Berita -->
+                <div
+                    class="news-grid"
+                    id="newsGrid"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <!-- Berita akan diisi oleh JavaScript --></div>
+                <!-- Tombol Load More -->
+                <div class="news-loadmore" data-aos="fade-up">
+                    <button class="btn-loadmore" id="loadMoreBtn">
+                        Muat Lebih Banyak
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Modal Detail Berita -->
+        <div id="newsModal" class="news-modal">
+            <div class="modal-content glass-modal">
+                <div class="modal-header">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img
+                        id="modalImage"
+                        src=""
+                        alt="News Image"
+                        class="modal-image"
+                    >
+                    <h2 id="modalTitle" class="modal-title"></h2>
+                    <div class="modal-meta">
+                        <span>
+                            <i class="far fa-calendar-alt"></i>
+                            <span id="modalDate"></span>
+                        </span>
+                        <span>
+                            <i class="fas fa-user"></i>
+                            <span id="modalAuthor"></span>
+                        </span>
+                    </div>
+                    <p id="modalContent" class="modal-text"></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-share">
+                        <i class="fas fa-share-alt"></i>
+                        Bagikan
+                    </button>
+                    <button class="modal-close-btn">Tutup</button>
+                </div>
+            </div>
+        </div>
         <!-- PREMIUM CLUB SCORE & STANDINGS SECTION -->
         <section class="premium-score-section">
             <div class="score-bg-gradient"></div>
